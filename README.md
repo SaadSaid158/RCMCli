@@ -34,10 +34,10 @@ A simple, fast, pure Go CLI tool for launching payloads on Nintendo Switch via R
 
 ## Build
 
-### Production Build (Recommended)
+### Build Script (Recommended)
 ```bash
-chmod +x build_production.sh
-./build_production.sh
+chmod +x build.sh
+./build.sh
 ```
 
 This creates optimized, stripped binaries with:
@@ -46,11 +46,6 @@ This creates optimized, stripped binaries with:
 - Version information embedded
 - Native IOKit support for macOS (when built on macOS)
 
-### Quick Build
-```bash
-chmod +x build.sh
-./build.sh
-```
 
 ### Output Structure
 ```
@@ -61,6 +56,9 @@ dist/
 ├── Windows/
 │   ├── RCMCli_1.0.0_windows_amd64.exe
 │   └── RCMCli_1.0.0_windows_arm64.exe
+├── macOS/
+│   ├── RCMCli_1.0.0_darwin_amd64
+│   └── RCMCli_1.0.0_darwin_arm64
 └── checksums.txt
 ```
 
@@ -152,3 +150,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Disclaimer
 
 This software is provided "as is" without any warranties. Use at your own risk. The authors are not responsible for any damage to your Nintendo Switch or any other devices.
+---
+Made with ❤️ by SaadSaid158
